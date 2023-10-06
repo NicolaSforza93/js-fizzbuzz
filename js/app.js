@@ -13,32 +13,33 @@ for (let i = 0; i < 100; i++) {
     const n = i + 1;
 
     //     - aggiungere istruzioni condizionali attraverso l'operatore modulo
-    let output = 0; 
+    let print = 0; 
     if (n % 15 === 0) {
-        output = 'fizzBuzz';
+        print = 'fizzBuzz';
         //       - ALTRIMENTI SE il numero è un multiplo di 3 e 5
        //         - stampare in console FizzBuzz  
         //  console.log('FizzBuzz');
     } else if (n % 5 === 0) {
-        output = 'buzz';
+        print = 'buzz';
         //       - ALTRIMENTI SE il numero è un multiplo di 5
        //         - stampare in console Buzz
         // console.log('Buzz');
     } else if (n % 3 === 0) {
-        output = 'fizz';
+        print = 'fizz';
         //       - SE il numero è un multiplo di 3
        //         - stampare in console Fizz
         // console.log('Fizz');
     } else {
+        print = n
         //       - ALTRIMENTI stampare gli altri numeri
         // console.log(n);
     }
 
     const boxDomElement = document.createElement('div');
     boxDomElement.classList.add('box');
-    boxDomElement.innerHTML = output || n
+    boxDomElement.innerHTML = print
     console.dir(boxDomElement);
-    console.log(output || n);
+    console.log(print);
     gridDomElement.append(boxDomElement);
 
     boxDomElement.style.backgroundColor = "#3F87AE"; 
