@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.box {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 60px;
+}
+
+body {
+    background-color: #193A4A;
+    padding: 20px 70px;
+    font-family: sans-serif
+}
