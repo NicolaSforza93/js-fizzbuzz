@@ -16,6 +16,20 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    background-color: #3F87AE;
+    color: black;
+}
+
+.fizzbuzz {
+    background-color: #DE5471;
+}
+
+.buzz {
+    background-color: #F8D377;
+}
+
+.fizz {
+    background-color: #62D3A4;
 }
 
 .title {
